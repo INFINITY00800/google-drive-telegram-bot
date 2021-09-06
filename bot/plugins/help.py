@@ -42,7 +42,7 @@ def map(pos):
         button = [
             [
              InlineKeyboardButton(text = 'Sᴜᴘᴘᴏʀᴛ', url = SUPPORT_CHAT_LINK),
-             InlineKeyboardButton(text = 'Cʜᴀɴɴᴇʟ, url = "https://t.me/DeeCodeBots")
+             InlineKeyboardButton(text = 'Cʜᴀɴɴᴇʟ', url = "https://t.me/DeeCodeBots")
             ],
             [InlineKeyboardButton(text = 'Bᴀᴄᴋ', callback_data = f"help+{pos-1}")]
 
