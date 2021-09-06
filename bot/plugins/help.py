@@ -35,23 +35,23 @@ def help_answer(c, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
+            [InlineKeyboardButton(text = 'Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
 
         button = [
             [
-             InlineKeyboardButton(text = 'Support Chat', url = SUPPORT_CHAT_LINK),
-             InlineKeyboardButton(text = 'Feature Request', url = "https://github.com/viperadnan-git/google-drive-telegram-bot/issues/new")
+             InlineKeyboardButton(text = 'Sᴜᴘᴘᴏʀᴛ', url = SUPPORT_CHAT_LINK),
+             InlineKeyboardButton(text = 'Cʜᴀɴɴᴇʟ, url = "https://t.me/DeeCodeBots")
             ],
-            [InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}")]
+            [InlineKeyboardButton(text = 'Bᴀᴄᴋ', callback_data = f"help+{pos-1}")]
 
         ]
     else:
         button = [
             [
-                InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = '-->', callback_data = f"help+{pos+1}")
+                InlineKeyboardButton(text = '📤', callback_data = f"help+{pos-1}"),
+                InlineKeyboardButton(text = '📥', callback_data = f"help+{pos+1}")
             ],
         ]
     return button
